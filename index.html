@@ -2,11 +2,174 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
+    <title>HTML Academy: Дeвайс</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
   </head>
-  <body>
+<body>
+<!-- header -->
+  <header>
+    <form class="header_search" action="https://echo.htmlacademy.ru" method="post">
+      <input type="search" placeholder="Поиск по сайту">
+      <button type="button">Найти</button>
+    </form>
+    <nav class="header_navigation">
+      <ul class="header_list">
+        <li class="header_list_item">
+          <a href="#" class="header_link">Войти</a>
+        </li>
+        <li class="header_list_item">
+          <a href="#" class="header_link">Сравнить</a>
+        </li>
+        <li class="header_list_item">
+          <a href="#" class="header_link">Корзина</a>
+        </li>
+      </ul>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
-
-  </body>
+      <ul>
+        <li class="header_list_item">
+          <a href="#" class="header_link catalog_link">Каталог товаров</a>
+  <!-- catalog -->
+          <ul>
+            <li class="header_list_item"><a href="#" class="header_link">Виртуальная реальность</a></li>
+            <li class="header_list_item"><a href="#" class="header_link">Моноподы для селфи</a></li>
+            <li class="header_list_item"><a href="#" class="header_link">Экшн-камеры</a></li>
+            <li class="header_list_item"><a href="#" class="header_link">Фитнес браслеты</a></li>
+            <li class="header_list_item"><a href="#" class="header_link">Умные часы</a></li>
+            <li class="header_list_item"><a href="#" class="header_link">Квадрокоптеры</a></li>
+          </ul>
+        </li>
+        <li class="header_list_item"><a href="№" class="header_link">Доставка</a></li>
+        <li class="header_list_item"><a href="№" class="header_link">Гарантия</a></li>
+        <li class="header_list_item"><a href="№" class="header_link">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+<!-- main -->
+  <main class="main_index">
+<!-- slider -->
+    <section class="index_slider">
+      <h1 class="main_title visually_hidden">Device - твой магазин гаджетов.</h1>
+      <p>Порхает как бабочка, жалит как пчела!</p>
+      <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+      <a href="#">Подробнее</a>
+      <dl class="product_info_list"> <!--контейнер-->
+        <dt class="product_info_title">800 m</dt> <!--термин-->
+        <dd class="product_info_description">Дальность полета</dd> <!--определение-->
+        <dt class="product_info_title">50 m</dt> <!--термин-->
+        <dd class="product_info_description">Радиус поражения</dd> <!--определение-->
+      </dl>
+      <ul class="slider_pagination">
+        <li class="slider_padination_item current_pagination_item">
+          <a href="#">
+            <span class="visually_hidden">1pic.</span>
+          </a>
+        </li>
+        <li class="slider_padination_item">
+          <a href="#">
+            <span class="visually_hidden">2pic.</span>
+          </a>
+        </li>
+        <li class="slider_padination_item">
+          <a href="#">
+            <span class="visually_hidden">3pic.</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+<!-- products -->
+    <section class="product_sections">
+      <h2 class="visually_hidden">Категории товаров.</h2>
+      <ul class="product_list">
+        <li class="product_item">
+          <a href="#" class="product_link">Виртуальная реальность</a>
+        </li>
+        <li class="product_item">
+          <a href="#" class="product_link">Моноподы для селфи</a>
+        </li>
+        <li class="product_item">
+          <a href="#" class="product_link">Экшн-камеры</a>
+        </li>
+        <li class="product_item">
+          <a href="#" class="product_link">Фитнес браслеты</a>
+        </li>
+        <li class="product_item">
+          <a href="#" class="product_link">Умные часы</a>
+        </li>
+        <li class="product_item">
+          <a href="#" class="productheader_link">Квадрокоптеры</a>
+        </li>
+      </ul>
+    </section>
+<!-- delivery -->
+    <section class="delivery">
+      <ul class="delivery_list">
+        <li class="delivery_item"><a href="#" class="delivery_link">Доставка</a></li>
+        <li class="delivery_item"><a href="#" class="delivery_link">Гарантия</a></li>
+        <li class="delivery_item"><a href="#" class="delivery_link">Кредит</a></li>
+      </ul>
+      <h2 class="delivery_title">Доставка</h2>
+      <p class="delivery_descripion">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+      <p class="delivery_rare">Доставим редкий товар под заказ</p>
+    </section>
+<!-- contacts -->
+    <section class="contacts">
+      <ul class="contacts_list">
+        <li class="contacts_item">
+          <h2 class="contact_title">О нас</h2>
+          <p class="contacts_descripion">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+          <p class="contacts_descripion">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
+          <ul class="contacts_delivery_list">
+            <li class="contacts_delivery_item"><a href="#" class="contacts_delivery_link">Меловые линии</a></li>
+            <li class="contacts_delivery_item"><a href="#" class="contacts_delivery_link">СДИК</a></li>
+            <li class="contacts_delivery_item"><a href="#" class="contacts_delivery_link">ТоксБерри</a></li>
+          </ul>
+          <a href="#" class="contacts_button">Подробнее о нас</a>
+        </li>
+        <li>
+          <h2 class="contact_title">Контакты</h2>
+          <p class="contacts_descripion">Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить работоспособность покупки.</p>
+          <address class="contacts_address">
+            <p class="contacts_descripion">Интернет-магазин «Девайс»</p>
+            <p class="contacts_descripion">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+            <a href="tel:+78128121212" class="contacts_tel">+7 (812) 812-12-12</a>
+            <p class="contacts_descripion">Время работы</p>
+            <ul class="contacts_time_list">
+              <li class="contacts_time_item">пн—пт: с 10:00 до 22:00</li>
+              <li class="contacts_time_item">сб—вс: с 10:00 до 19:00</li>
+            </ul>
+          </address>
+          <button type="button" class="contacts_button">Напишите нам</button>
+        </li>
+      </ul>
+    </section>
+<!-- subscribe -->
+    <section class="subscribe">
+      <h2>Подпишитесь на рассылку</h2>
+      <p>Еженедельный дайджест с обзорами новинок,
+        длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+      <form class="subscribe_form" action="https://echo.htmlacademy.ru" method="post" >
+        <input type="text" class="subscribe_field">
+        <button type="submit">Подписаться</button>
+      </form>
+      <span class="this_is_free">Это бесплатно</span>
+    </section>
+<!-- footer -->
+    <footer>
+      <h2 class="visually_hidden">Дополнительная информация</h2>
+      <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+      <ul class="footer_list">
+        <li class="footer_item"><a href="#" class="delivery_link">Доставка</a></li>
+        <li class="footer_item"><a href="#" class="delivery_link">Гарантия</a></li>
+        <li class="footer_item"><a href="#" class="delivery_link">Контакты</a></li>
+      </ul>
+      <ul class="footer_social_media_list">
+        <li class="footer_social_media_link"><a href="#"><span class="visually_hidden">Telegram</span></a></li>
+        <li class="footer_social_media_link"><a href="#"><span class="visually_hidden">YouTube</span></a></li>
+        <li class="footer_social_media_link"><a href="#"><span class="visually_hidden">Twitter</span></a></li>
+      </ul>
+      <a href="tel:+78128121212" class="footer_tel">+7 (812) 812-12-12</a>
+    </footer>
+  </main>
+</body>
 </html>
