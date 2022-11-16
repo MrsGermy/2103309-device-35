@@ -8,7 +8,8 @@
   </head>
 <body>
 <!-- header -->
-  <header>
+<div class="page_wrapper">
+  <header class="header">
     <form class="header_search" action="https://echo.htmlacademy.ru" method="post">
       <input type="search" placeholder="Поиск по сайту">
       <button type="button">Найти</button>
@@ -26,11 +27,11 @@
         </li>
       </ul>
 
-      <ul>
-        <li class="header_list_item">
-          <a href="#" class="header_link catalog_link">Каталог товаров</a>
+      <ul class="header_list header_list_info">
+        <li class="header_list_item header_list_item_catalog">
+          <a href="#" class="header_link_info catalog_link">Каталог товаров</a>
   <!-- catalog -->
-          <ul>
+          <ul class="catalog visually_hidden">
             <li class="header_list_item"><a href="#" class="header_link">Виртуальная реальность</a></li>
             <li class="header_list_item"><a href="#" class="header_link">Моноподы для селфи</a></li>
             <li class="header_list_item"><a href="#" class="header_link">Экшн-камеры</a></li>
@@ -39,9 +40,15 @@
             <li class="header_list_item"><a href="#" class="header_link">Квадрокоптеры</a></li>
           </ul>
         </li>
-        <li class="header_list_item"><a href="№" class="header_link">Доставка</a></li>
-        <li class="header_list_item"><a href="№" class="header_link">Гарантия</a></li>
-        <li class="header_list_item"><a href="№" class="header_link">Контакты</a></li>
+        <li class="header_list_item">
+          <a href="№" class="header_link_info">Доставка</a>
+        </li>
+        <li class="header_list_item">
+          <a href="№" class="header_link_info">Гарантия</a>
+        </li>
+        <li class="header_list_item">
+          <a href="№" class="header_link_info">Контакты</a>
+        </li>
       </ul>
     </nav>
   </header>
@@ -154,6 +161,7 @@
       </form>
       <span class="this_is_free">Это бесплатно</span>
     </section>
+  </main>
 <!-- footer -->
     <footer>
       <h2 class="visually_hidden">Дополнительная информация</h2>
@@ -170,6 +178,6 @@
       </ul>
       <a href="tel:+78128121212" class="footer_tel">+7 (812) 812-12-12</a>
     </footer>
-  </main>
+</div>
 </body>
 </html>
