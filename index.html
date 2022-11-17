@@ -10,34 +10,55 @@
 <!-- header -->
 <div class="page_wrapper">
   <header class="header">
-    <form class="header_search" action="https://echo.htmlacademy.ru" method="post">
-      <input type="search" placeholder="Поиск по сайту">
-      <button type="button">Найти</button>
-    </form>
-    <nav class="header_navigation">
-      <ul class="header_list">
-        <li class="header_list_item">
-          <a href="#" class="header_link">Войти</a>
-        </li>
-        <li class="header_list_item">
-          <a href="#" class="header_link">Сравнить</a>
-        </li>
-        <li class="header_list_item">
-          <a href="#" class="header_link">Корзина</a>
-        </li>
-      </ul>
-
+    <div class="header_wrapper">
+      <form class="header_search" action="https://echo.htmlacademy.ru" method="post">
+        <label for="search" class="visually_hidden">Поиск по сайту</label>
+        <input class="search_field" type="search" id="search" placeholder="Поиск по сайту">
+        <button class="search_button" type="button">Найти</button>
+      </form>
+      <nav class="header_navigation">
+        <ul class="header_list">
+          <li class="header_list_item">
+            <a href="#" class="header_link">
+              <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="13" height="12" fill="none"><path fill="#000" d="M0 12h13c-.2-2.6-2.1-4.8-4.7-5.5 1-.6 1.7-1.7 1.7-3C10 1.6 8.4 0 6.5 0S3 1.6 3 3.5c0 1.3.7 2.4 1.7 3C2.1 7.2.2 9.4 0 12Z"/></svg>
+              Войти</a>
+          </li>
+          <li class="header_list_item">
+            <a href="#" class="header_link">
+              <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="10" height="12" fill="none"><path fill="#000" d="M6 0H4v12h2V0ZM2 4H0v8h2V4ZM10 3H8v9h2V3Z"/></svg>
+              <span>Сравнить</span></a>
+          </li>
+          <li class="header_list_item">
+            <a href="#" class="header_link">
+              <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none"><path fill="#000" d="m15.3 5-3.5.2L8.6.3C8.5.1 8.2 0 8 0c-.2 0-.5.1-.6.3L4.2 5.2H.7c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1.1 1.4 1.1h9.4c.7 0 1.2-.4 1.4-1.1L16 6v-.2c0-.4-.3-.8-.7-.8ZM8 1.9l2.2 3.2H5.9L8 1.9Z"/></svg>
+              Корзина</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
       <ul class="header_list header_list_info">
         <li class="header_list_item header_list_item_catalog">
           <a href="#" class="header_link_info catalog_link">Каталог товаров</a>
   <!-- catalog -->
           <ul class="catalog visually_hidden">
-            <li class="header_list_item"><a href="#" class="header_link">Виртуальная реальность</a></li>
-            <li class="header_list_item"><a href="#" class="header_link">Моноподы для селфи</a></li>
-            <li class="header_list_item"><a href="#" class="header_link">Экшн-камеры</a></li>
-            <li class="header_list_item"><a href="#" class="header_link">Фитнес браслеты</a></li>
-            <li class="header_list_item"><a href="#" class="header_link">Умные часы</a></li>
-            <li class="header_list_item"><a href="#" class="header_link">Квадрокоптеры</a></li>
+            <li class="header_list_item">
+              <a href="#" class="header_link">Виртуальная реальность</a>
+            </li>
+            <li class="header_list_item">
+              <a href="#" class="header_link">Моноподы для селфи</a>
+            </li>
+            <li class="header_list_item">
+              <a href="#" class="header_link">Экшн-камеры</a>
+            </li>
+            <li class="header_list_item">
+              <a href="#" class="header_link">Фитнес браслеты</a>
+            </li>
+            <li class="header_list_item">
+              <a href="#" class="header_link">Умные часы</a>
+            </li>
+            <li class="header_list_item">
+              <a href="#" class="header_link">Квадрокоптеры</a>
+            </li>
           </ul>
         </li>
         <li class="header_list_item">
@@ -50,20 +71,19 @@
           <a href="№" class="header_link_info">Контакты</a>
         </li>
       </ul>
-    </nav>
   </header>
 <!-- main -->
-  <main class="main_index">
+  <main class="main_index main_container">
 <!-- slider -->
     <section class="index_slider">
-      <h1 class="main_title visually_hidden">Device - твой магазин гаджетов.</h1>
-      <p>Порхает как бабочка, жалит как пчела!</p>
-      <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+      <h1 class="visually_hidden">Device - твой магазин гаджетов.</h1>
+      <p class="main_description_title">Порхает как бабочка, жалит как пчела!</p>
+      <p class="main_description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
       <a href="#">Подробнее</a>
       <dl class="product_info_list"> <!--контейнер-->
-        <dt class="product_info_title">800 m</dt> <!--термин-->
+        <dt class="product_info_title">800 м</dt> <!--термин-->
         <dd class="product_info_description">Дальность полета</dd> <!--определение-->
-        <dt class="product_info_title">50 m</dt> <!--термин-->
+        <dt class="product_info_title">50 м</dt> <!--термин-->
         <dd class="product_info_description">Радиус поражения</dd> <!--определение-->
       </dl>
       <ul class="slider_pagination">
@@ -88,22 +108,41 @@
     <section class="product_sections">
       <h2 class="visually_hidden">Категории товаров.</h2>
       <ul class="product_list">
-        <li class="product_item">
+
+        <li class="product_item virtuall_reality">
+          <div class="product_img_wrap">
+            <img class="product_img" src="images/products_icon/virtuall_reality.svg" width="97" height="55" alt="">
+          </div>
           <a href="#" class="product_link">Виртуальная реальность</a>
         </li>
-        <li class="product_item">
+        <li class="product_item selfie_stick">
+          <div class="product_img_wrap">
+            <img class="product_img" src="images/products_icon/selfie_stick.svg" alt="">
+          </div>
           <a href="#" class="product_link">Моноподы для селфи</a>
         </li>
-        <li class="product_item">
+        <li class="product_item camera">
+          <div class="product_img_wrap">
+            <img class="product_img" src="images/products_icon/camera.svg" alt="">
+          </div>
           <a href="#" class="product_link">Экшн-камеры</a>
         </li>
-        <li class="product_item">
+        <li class="product_item fitness_bracelet">
+          <div class="product_img_wrap">
+            <img class="product_img" src="images/products_icon/fitness-bracelet.svg" alt="">
+          </div>
           <a href="#" class="product_link">Фитнес браслеты</a>
         </li>
-        <li class="product_item">
+        <li class="product_item smart_watch">
+          <div class="product_img_wrap">
+            <img class="product_img" src="images/products_icon/smart_watch.svg" alt="">
+          </div>
           <a href="#" class="product_link">Умные часы</a>
         </li>
-        <li class="product_item">
+        <li class="product_item quadrocopter">
+          <div class="product_img_wrap">
+            <img class="product_img" src="images/products_icon/quadrocopter.svg" alt="">
+          </div>
           <a href="#" class="productheader_link">Квадрокоптеры</a>
         </li>
       </ul>
@@ -111,9 +150,15 @@
 <!-- delivery -->
     <section class="delivery">
       <ul class="delivery_list">
-        <li class="delivery_item"><a href="#" class="delivery_link">Доставка</a></li>
-        <li class="delivery_item"><a href="#" class="delivery_link">Гарантия</a></li>
-        <li class="delivery_item"><a href="#" class="delivery_link">Кредит</a></li>
+        <li class="delivery_item">
+          <a href="#" class="delivery_link">Доставка</a>
+        </li>
+        <li class="delivery_item">
+          <a href="#" class="delivery_link">Гарантия</a>
+        </li>
+        <li class="delivery_item">
+          <a href="#" class="delivery_link">Кредит</a>
+        </li>
       </ul>
       <h2 class="delivery_title">Доставка</h2>
       <p class="delivery_descripion">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
@@ -126,21 +171,21 @@
           <h2 class="contact_title">О нас</h2>
           <p class="contacts_descripion">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
           <p class="contacts_descripion">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
-          <ul class="contacts_delivery_list">
-            <li class="contacts_delivery_item"><a href="#" class="contacts_delivery_link">Меловые линии</a></li>
-            <li class="contacts_delivery_item"><a href="#" class="contacts_delivery_link">СДИК</a></li>
-            <li class="contacts_delivery_item"><a href="#" class="contacts_delivery_link">ТоксБерри</a></li>
-          </ul>
+          <div class="delivery_company">
+            <a href="#" class="contacts_delivery_link">Меловые линии</a>
+            <a href="#" class="contacts_delivery_link">СДИК</a>
+            <a href="#" class="contacts_delivery_link">ТоксБерри</a>
+          </div>
           <a href="#" class="contacts_button">Подробнее о нас</a>
         </li>
-        <li>
-          <h2 class="contact_title">Контакты</h2>
+        <li class="contacts_item">
+            <h2 class="contact_title">Контакты</h2>
           <p class="contacts_descripion">Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить работоспособность покупки.</p>
           <address class="contacts_address">
-            <p class="contacts_descripion">Интернет-магазин «Девайс»</p>
+            <p class="address_title">Интернет-магазин «Девайс»</p>
             <p class="contacts_descripion">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
             <a href="tel:+78128121212" class="contacts_tel">+7 (812) 812-12-12</a>
-            <p class="contacts_descripion">Время работы</p>
+            <p class="address_title">Время работы</p>
             <ul class="contacts_time_list">
               <li class="contacts_time_item">пн—пт: с 10:00 до 22:00</li>
               <li class="contacts_time_item">сб—вс: с 10:00 до 19:00</li>
@@ -152,29 +197,41 @@
     </section>
 <!-- subscribe -->
     <section class="subscribe">
-      <h2>Подпишитесь на рассылку</h2>
-      <p>Еженедельный дайджест с обзорами новинок,
+      <h2 class="subscribe_title">Подпишитесь на рассылку</h2>
+      <p class="subscribe_description">Еженедельный дайджест с обзорами новинок,
         длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
-      <form class="subscribe_form" action="https://echo.htmlacademy.ru" method="post" >
-        <input type="text" class="subscribe_field">
+      <form class="subscribe_form" action="https://echo.htmlacademy.ru" method="post">
+        <input type="text" class="subscribe_field" placeholder="Ваш e-mail">
         <button type="submit">Подписаться</button>
       </form>
       <span class="this_is_free">Это бесплатно</span>
     </section>
   </main>
 <!-- footer -->
-    <footer>
+    <footer class="footer">
       <h2 class="visually_hidden">Дополнительная информация</h2>
-      <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+      <p class="footer_address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
       <ul class="footer_list">
-        <li class="footer_item"><a href="#" class="delivery_link">Доставка</a></li>
-        <li class="footer_item"><a href="#" class="delivery_link">Гарантия</a></li>
-        <li class="footer_item"><a href="#" class="delivery_link">Контакты</a></li>
+        <li class="footer_item">
+          <a href="#" class="delivery_link">Доставка</a>
+        </li>
+        <li class="footer_item">
+          <a href="#" class="delivery_link">Гарантия</a>
+        </li>
+        <li class="footer_item">
+          <a href="#" class="delivery_link">Контакты</a>
+        </li>
       </ul>
       <ul class="footer_social_media_list">
-        <li class="footer_social_media_link"><a href="#"><span class="visually_hidden">Telegram</span></a></li>
-        <li class="footer_social_media_link"><a href="#"><span class="visually_hidden">YouTube</span></a></li>
-        <li class="footer_social_media_link"><a href="#"><span class="visually_hidden">Twitter</span></a></li>
+        <li class="footer_social_media_link">
+          <a href="#"><span class="visually_hidden">Telegram</span></a>
+        </li>
+        <li class="footer_social_media_link">
+          <a href="#"><span class="visually_hidden">YouTube</span></a>
+        </li>
+        <li class="footer_social_media_link">
+          <a href="#"><span class="visually_hidden">Twitter</span></a>
+        </li>
       </ul>
       <a href="tel:+78128121212" class="footer_tel">+7 (812) 812-12-12</a>
     </footer>
