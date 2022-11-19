@@ -1,3 +1,4 @@
+
 /* шрифты */
 @font-face {
   font-family: "Raleway";
@@ -24,7 +25,6 @@
 }
 
 body {
-  width: 1440px;
   margin: 0 auto;
   height: 100%;
   font-family: "Raleway";
@@ -128,6 +128,7 @@ a {
   margin-bottom: 50px;
   padding-top: 40px;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .header_search {
@@ -177,7 +178,7 @@ a {
   font-weight: 400;
   line-height: 30px;
   display: grid;
-  grid-template-columns: 231px max-content max-content;
+  grid-template-columns: 228px auto auto;
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -192,15 +193,15 @@ a {
   padding: 0;
   margin: 0;
   list-style-type: none;
-  display: grid;
-  grid-template-columns: 520px max-content max-content max-content;
+  display: flex;
   position: relative;
   align-items: center;
+  row-gap: 10px;
+  flex-wrap: wrap;
 }
 
-.header_list_item:not(:last-child) {
-
-  margin-right: 50px;
+.header_list_info .header_list_item_catalog {
+  margin-right: 260px;
 }
 
 .header_link {
@@ -269,7 +270,7 @@ width: 100%;
 .slider_info_list {
   font-family: "Rubik";
   display:  grid;
-  grid-template-columns: repeat(2, max-content);
+  grid-template-columns: repeat(2, auto);
   grid-template-rows: max-content auto;
   margin: 0;
   padding: 0;
@@ -637,7 +638,7 @@ width: 100%;
 }
 
 .subscribe {
-  width: 1160px;
+  max-width: 1160px;
   margin: 0 auto;
   padding-bottom: 56px;
 
@@ -749,6 +750,7 @@ margin-bottom: 35px;
   display: grid;
   grid-template-columns: auto 1fr auto;
   justify-items: center;
+  column-gap: 15px;
 }
 
 .footer_social_media_wrapper {
@@ -781,6 +783,7 @@ margin-bottom: 35px;
 .footer_list {
   margin-bottom: 62px;
 }
+
 .footer_social_media_link:not(:last-child) {
   margin-right: 15px;
 }
@@ -789,7 +792,404 @@ margin-bottom: 35px;
   margin-right: 35px;
   }
 
-
 .footer_academy {
   align-items: flex-end;
+}
+
+/* catalog */
+.catalog_title {
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumbs_list {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumbs_item {
+  position: relative;
+}
+
+.breadcrumbs_item:not(:last-child) {
+  margin-right: 36px;
+}
+
+.breadcrumbs_item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  background-image: url(../images/breadcrumbs_icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 4px;
+  height: 7px;
+  top: 0;
+  bottom: 0;
+  right: -20px;
+  margin: auto;
+}
+
+.main_catalog {
+  background-color: #F0F0F0;
+}
+
+.catalog_products {
+  display: flex;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.filter_title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 72px;
+  padding-top: 25px;
+}
+
+.catalog_filter_title {
+  font-family: 'Rubik';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 30px;
+}
+
+.catalog_filter_group {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.range_price {
+  display: flex;
+  border: none;
+  background-color: #F0F0F0;
+  margin-top: 11px;
+}
+
+.range_input {
+  width: 30px;
+  padding: 0 2px;
+  font: inherit;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  appearance: textfield;
+}
+
+.range_input::-webkit-outer-spin-button,
+.range_input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.range_main_line {
+  width: 200px;
+  height: 2px;
+  background-color: #DCDCDC;
+}
+
+.range_line {
+  width: 119px;
+  height: 2px;
+  background-color: #000;
+  position: relative;
+}
+
+.range_button {
+  border: 2px solid #000;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+}
+
+.min_price_bottom {
+  position: absolute;
+  left: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+}
+
+.max_price_bottom {
+  position: absolute;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+}
+
+.range_price_min,
+.range_price_max {
+  font-family: 'Rubik';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  opacity: 0.3;
+}
+
+.catalog_filter_color,
+.catalog_filter_bluetooth {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 47px;
+}
+
+.filter_color_item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.control_input {
+  position: relative;
+}
+
+.control_checkbox_label {
+  font-family: 'Rubik';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+/*
+Таким способом можно сбелать крестик
+
+.control_input[type="checkbox"]:checked + .control_checkbox_mark::before,
+.control_input[type="checkbox"]:checked + .control_checkbox_mark::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 4px;
+  width: 12px;
+  height: 2px;
+  background-color: #000;
+}
+
+.control_input[type="checkbox"]:checked + .control_checkbox_mark::before {
+  transform: rotate(45deg);
+}
+
+.control_input[type="checkbox"]:checked + .control_checkbox_mark::after {
+  transform: rotate(-45deg);
+}
+*/
+
+.control_input[type="checkbox"]:checked + .control_checkbox_mark::before {
+  content: "";
+  position: absolute;
+  background-image: url(/images/control_check.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.control_input[type="radio"] + .control_checkbox_mark {
+  border-radius: 50%;
+}
+
+.control_input[type="radio"]:checked + .control_checkbox_mark::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #000;
+  border-radius: 50%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+
+
+.control {
+  display: block;
+  padding: 7px 7px 7px 41px;
+  position: relative;
+}
+
+.control_checkbox_mark {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #ccc;
+  border-radius: 3px;
+  left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.catalog_right_column {
+  background-color: #fff;
+}
+
+.catalog_sorting_wrapper {
+  min-width: 142px;
+}
+
+.catalog_sorting {
+  background-image: url(/images/sort_list_arrow.svg);
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  right: 0;
+  background-color: #F0F0F0;
+  padding: 25px 32px 25px 10px;
+  appearance: none; /*удадяем стрелку по умолчанию*/
+  border: none;
+  font-family: 'Rubik';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.catalog_right_column_sort {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F0F0F0;
+}
+
+.sort_label,
+.filter_title {
+  font-family: 'Raleway';
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.sort_arrow_up {
+margin-right: 19px;
+}
+
+.sort_arrow_down {
+  transform: rotate(180deg);
+}
+.catalog_product_list {
+  width: 840px;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 70px;
+  display: grid;
+  grid-template-columns: repeat(2, 360px);
+  gap: 40px  44px;
+  margin-bottom: 44px;
+}
+
+.product_card_img {
+display: block;
+margin-bottom: 32px;
+}
+
+.catalog_product_sign {
+  display: grid;
+  grid-template-columns: 226px auto;
+  justify-content: space-between;
+}
+
+.catalog_filter {
+  margin-right: 20px;
+}
+.product_price {
+  font-family: 'Rubik';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.pagination_hide {
+  display: none;
+}
+
+.catalog_button {
+  display: block;
+  max-width: 760px;
+  width: 100%;
+  font-family: 'Raleway';
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-bottom: 44px;
+  border: 3px solid #E5E5E5;
+  background: #FFF;
+  height: 55px;
+}
+
+.pagination_list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 78px;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+.pagination {
+  background-color: #EBEBEB;
+  width: 760px;
+  margin: 0 auto;
+}
+
+.pagination_item {
+  font-family: 'Rubik';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #444;
+  opacity: 0.3;
+}
+
+.pagination_link {
+  padding: 15px;
+}
+.pagination_prew,
+.pagination_next {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #444;
+  opacity: 0.3;
+}
+
+.pagination_prew {
+margin-right: 145px;
+}
+.pagination_next {
+  margin-left: 145px;
 }
